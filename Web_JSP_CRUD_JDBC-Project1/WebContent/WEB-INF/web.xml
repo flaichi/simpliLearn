@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Web_JSP_CRUD_JDBC_EX</display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+<!-- 	<servlet> -->
+<!-- 		<description></description> -->
+<!-- 		<display-name>MyServlet</display-name> -->
+<!-- 		<servlet-name>MyServlet</servlet-name> -->
+<!-- 		<servlet-class>com.fl.web.MyServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>MyServlet</servlet-name> -->
+<!-- 		<url-pattern>/MyServlet</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	<servlet>
+		<description></description>
+		<display-name>loginServlet</display-name>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.fl.web.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
